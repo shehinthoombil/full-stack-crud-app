@@ -102,7 +102,7 @@ const UsersTable = () => {
                                 </td>
                                 <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                                     <button
-                                        onClick={() => navigate(`/edit/${user._id}`)}
+                                        onClick={() => navigate(`/edit/${user._id}`, { state: { user } })}
                                         className="text-indigo-600 hover:text-indigo-900 mr-4"
                                     >
                                         Edit
